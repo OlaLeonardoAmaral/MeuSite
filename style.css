@@ -1,0 +1,57 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'inter';
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    /* background-color: gray; */
+}
+
+.navegacao {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.navegacao a:hover {
+    font-weight: 700;
+    border-bottom: #ffffff solid 1px;
+}
+
+.primeira-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+    height: 36rem;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.primeira-section h1 {
+    font-size: 7rem;
+    padding-left: 20px;
+}
+
+.contato-tela-inicial {
+    display: flex;
+    padding-left: 2rem;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.contato-tela-inicial a:hover {
+    font-weight: 700;
+    border-bottom: #ffffff solid 1px;
+}
