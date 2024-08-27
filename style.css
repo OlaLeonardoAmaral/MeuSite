@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, 'inter';
+    
     text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'inter';
+}
+
+a {
+    color: white;
 }
 
 .cabecalho {
@@ -22,11 +32,10 @@
 }
 
 .navegacao a:hover {
-    font-weight: 700;
-    border-bottom: #ffffff solid 1px;
+    color: gray;
 }
 
-.primeira-section {
+.home {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 0 2rem;
@@ -34,7 +43,7 @@
     justify-content: center;
 }
 
-.primeira-section h1 {
+.home h1 {
     font-size: 7rem;
     padding-left: 20px;
 }
@@ -47,8 +56,7 @@
 }
 
 .contato-tela-inicial a:hover {
-    font-weight: 700;
-    border-bottom: #ffffff solid 1px;
+    color: gray;
 }
 
 .section-sobre {
@@ -108,14 +116,20 @@
 }
 
 .card-projeto {
-    border: solid 1px;
     height: 100%;
     width: 100%;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background: #211;
+    transition: 0.5s ease;
+}
+
+.card-projeto:hover {
+    border: solid 1px;
+    transform: scale(1.04);
 }
 
 .section-projetos h1 {
@@ -138,4 +152,26 @@
 .btn-contatos {
     display: flex;
     gap: 10px;
+}
+
+.botoes-projeto {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.botoes-projeto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.botoes-projeto a:hover {
+    box-shadow: 0 0 1rem white;
 }
